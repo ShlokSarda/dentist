@@ -31,23 +31,25 @@ const Visit = () => {
         gap={10}
       >
         {/* Hexagonal Images */}
-        <Flex direction="row" align="center">
-          <Flex direction="column" align="center" gap={4}>
-            {/* First row - Single Image */}
-            <Flex justify="center">
-              <Image src={visit1} alt="Interior 1" sx={hexagonStyle} />
-              {/* <Image src={visit3} alt="Interior 3" sx={hexagonStyle} /> */}
-            </Flex>
+        <Box display={{ base: "none", md: "flex" }}>
+          <Flex direction="row" align="center">
+            <Flex direction="column" align="center" gap={4}>
+              {/* First row - Single Image */}
+              <Flex justify="center">
+                <Image src={visit1} alt="Interior 1" sx={hexagonStyle} />
+                {/* <Image src={visit3} alt="Interior 3" sx={hexagonStyle} /> */}
+              </Flex>
 
-            {/* Second row - Two Images */}
-            <Flex justify="center" gap={4} mt={0}>
-              <Image src={visit2} alt="Interior 2" sx={hexagonStyle} />
+              {/* Second row - Two Images */}
+              <Flex justify="center" gap={4} mt={0}>
+                <Image src={visit2} alt="Interior 2" sx={hexagonStyle} />
+              </Flex>
+            </Flex>
+            <Flex justify="center" mt={0} ml={-12}>
+              <Image src={visit3} alt="Interior 3" sx={hexagonStyle} />
             </Flex>
           </Flex>
-          <Flex justify="center" mt={0} ml={-12}>
-            <Image src={visit3} alt="Interior 3" sx={hexagonStyle} />
-          </Flex>
-        </Flex>
+        </Box>
 
         {/* Contact Information */}
         <VStack
