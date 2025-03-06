@@ -129,7 +129,7 @@ const Header = () => {
             <Icon as={FaPhoneAlt} boxSize={5} />
           </Link>
           <Link
-            href="https://www.google.com/maps/place/Qualiteeth+Dental+Care"
+            href="https://www.google.com/maps/place/Qualiteeth+Dental+Care/@26.9018108,75.7366896,17z/data=!3m1!4b1!4m6!3m5!1s0x396db52aa8fff4cf:0xfd055fea55b4585d!8m2!3d26.901806!4d75.7392645!16s%2Fg%2F11l5vzlvgg?entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             _hover={{ color: "#c49d84" }}
             color="#F5C7A9"
