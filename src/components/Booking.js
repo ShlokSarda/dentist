@@ -12,7 +12,11 @@ const BookingSection = () => {
             filter="grayscale(1) brightness(0)"
           />
         </Box>
-        <Heading fontSize="5xl" fontWeight="light" mb={4}>
+        <Heading
+          fontSize={{ base: "3xl", md: "5xl" }}
+          fontWeight="light"
+          mb={4}
+        >
           Book today for quality care
         </Heading>
         <Text fontSize="xl" color="black" fontWeight="light" mb={4}>

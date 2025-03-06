@@ -23,7 +23,7 @@ const hexagonStyle = {
 
 const Visit = () => {
   return (
-    <Box bg="#FFF5F0" p={10} id="about">
+    <Box bg="#FFF5F0" p={10} py={20} id="about">
       <Flex
         direction={{ base: "column", md: "row" }}
         align="center"
@@ -58,7 +58,7 @@ const Visit = () => {
           w={{ base: "100%", md: "50%" }}
           px={5}
         >
-          <Text fontSize="5xl" fontWeight="light">
+          <Text fontSize={{ base: "4xl", md: "5xl" }} fontWeight="light">
             Visit Qualiteeth
           </Text>
           <Text fontSize="lg" fontWeight="light">

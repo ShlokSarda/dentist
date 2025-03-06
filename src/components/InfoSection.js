@@ -3,7 +3,14 @@ import { FaTags, FaHandHoldingMedical } from "react-icons/fa";
 
 const InfoSection = () => {
   return (
-    <Flex maxW="6xl" mx="auto" py={20} gap={0} flexWrap="wrap" justify="center">
+    <Flex
+      maxW="6xl"
+      mx="auto"
+      py={{ base: "0", md: 20 }}
+      gap={0}
+      flexWrap="wrap"
+      justify="center"
+    >
       {/* Transparent Pricing */}
       <Box
         flex="1"
