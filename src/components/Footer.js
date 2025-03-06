@@ -39,9 +39,15 @@ const Footer = () => {
             <Text fontSize="lg" fontWeight="bold">
               Practice
             </Text>
-            <Link _hover={{ color: "#c49d84" }}>Home</Link>
-            <Link _hover={{ color: "#c49d84" }}>About</Link>
-            <Link _hover={{ color: "#c49d84" }}>Services</Link>
+            <Link href="#home" _hover={{ color: "#c49d84" }}>
+              Home
+            </Link>
+            <Link href="#about" _hover={{ color: "#c49d84" }}>
+              About
+            </Link>
+            <Link href="#service" _hover={{ color: "#c49d84" }}>
+              Services
+            </Link>
           </VStack>
 
           {/* Services Section */}
