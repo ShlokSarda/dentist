@@ -7,6 +7,11 @@ import {
   Image,
   Link,
   useBreakpointValue,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import video from "../assets/Qualiteeth.mp4";
@@ -15,6 +20,7 @@ import world_class from "../assets/world-class-dental-care.png";
 import { Check } from "lucide-react";
 
 const HeroSection = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
   const [rotation, setRotation] = useState(0);
   useEffect(() => {
@@ -102,9 +108,23 @@ const HeroSection = () => {
             size={{ base: "lg", md: "lg" }}
             _hover={{ bg: "#FCA982" }}
             marginTop="10px"
+            onClick={() => setIsOpen(true)}
           >
             Book Now
           </Button>
+          <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} size="xl">
+            <ModalOverlay />
+            <ModalContent>
+              <ModalCloseButton />
+              <ModalBody>
+                <iframe
+                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0HH7UcCwpUcb-NlDA38ZGn_NmQqHUJ9llAjBKixKAX-8BT0MCXFwBnZaMcnlb3-6fw9BMPDcs2?gv=true"
+                  style={{ border: "0", width: "100%", height: "600px" }}
+                  frameBorder="0"
+                ></iframe>
+              </ModalBody>
+            </ModalContent>
+          </Modal>
           <Text fontSize={{ base: "xl", md: "xl" }} color="white">
             Or Call <Link href="tel:+919256491206">(+91) 92564 91206</Link>
           </Text>
