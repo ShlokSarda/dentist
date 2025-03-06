@@ -12,6 +12,7 @@ import {
   ModalContent,
   ModalBody,
   ModalCloseButton,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import video from "../assets/Qualiteeth.mp4";
@@ -20,7 +21,7 @@ import world_class from "../assets/world-class-dental-care.png";
 import { Check } from "lucide-react";
 
 const HeroSection = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const [showVideo, setShowVideo] = useState(false);
   const [rotation, setRotation] = useState(0);
   useEffect(() => {
@@ -108,11 +109,16 @@ const HeroSection = () => {
             size={{ base: "lg", md: "lg" }}
             _hover={{ bg: "#FCA982" }}
             marginTop="10px"
-            onClick={() => setIsOpen(true)}
+            onClick={onOpen}
           >
             Book Now
           </Button>
-          <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} size="xl">
+          <Modal
+            isOpen={isOpen}
+            onClose={onClose}
+            size="xl"
+            blockScrollOnMount={true}
+          >
             <ModalOverlay />
             <ModalContent>
               <ModalCloseButton />

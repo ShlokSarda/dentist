@@ -10,10 +10,11 @@ import {
   ModalContent,
   ModalBody,
   ModalCloseButton,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { useState } from "react";
 const BookingSection = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box bg="#f4c7a4" py={16} textAlign="center">
       <VStack spacing={4} maxW="xl" mx="auto">
@@ -40,11 +41,16 @@ const BookingSection = () => {
           bg="black"
           color="#f4c7a4"
           _hover={{ bg: "#f4c7a4", color: "black", border: "1px solid black" }}
-          onClick={() => setIsOpen(true)}
+          onClick={onOpen}
         >
           BOOK ONLINE
         </Button>
-        <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} size="xl">
+        <Modal
+          isOpen={isOpen}
+          onClose={onClose}
+          size="xl"
+          blockScrollOnMount={true}
+        >
           <ModalOverlay />
           <ModalContent>
             <ModalCloseButton />
