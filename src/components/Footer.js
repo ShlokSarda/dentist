@@ -86,7 +86,7 @@ const Footer = () => {
                 bg="#F5C7A9"
                 borderRadius="full"
                 as="a"
-                href="#"
+                href="https://www.instagram.com/qualiteeth_dental/"
                 aria-label="Instagram"
                 icon={<FaInstagram />}
               />
@@ -97,14 +97,6 @@ const Footer = () => {
                 href="#"
                 aria-label="LinkedIn"
                 icon={<FaLinkedin />}
-              />
-              <IconButton
-                bg="#F5C7A9"
-                borderRadius="full"
-                as="a"
-                href="#"
-                aria-label="YouTube"
-                icon={<FaYoutube />}
               />
             </Stack>
           </VStack>
