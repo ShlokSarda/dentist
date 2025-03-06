@@ -47,7 +47,7 @@ const services = [
 
 const DentalServices = () => {
   return (
-    <Box bg="#fceee5" py={20} textAlign="center">
+    <Box bg="#fceee5" py={20} textAlign="center" id="service">
       <Text fontSize="5xl" mb={10} fontWeight="light">
         All-in-one dental solutions, right here in one place
       </Text>

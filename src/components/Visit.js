@@ -23,7 +23,7 @@ const hexagonStyle = {
 
 const Visit = () => {
   return (
-    <Box bg="#FFF5F0" p={10}>
+    <Box bg="#FFF5F0" p={10} id="about">
       <Flex
         direction={{ base: "column", md: "row" }}
         align="center"

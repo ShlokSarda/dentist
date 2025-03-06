@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <Box
       as="header"
-      bg="#502626"
+      bg="#28211d"
       p={4}
       color="white"
       height="80px"
@@ -70,7 +70,16 @@ const Header = () => {
             Home
           </Link>
 
-          <Menu isOpen={isOpen}>
+          <Link
+            href="#service"
+            fontSize="lg"
+            _hover={{ color: "#c49d84" }}
+            color="#F5C7A9"
+          >
+            Services
+          </Link>
+
+          {/* <Menu isOpen={isOpen}>
             <MenuButton
               fontSize="lg"
               bg="transparent"
@@ -107,7 +116,7 @@ const Header = () => {
                 </MenuItem>
               ))}
             </MenuList>
-          </Menu>
+          </Menu> */}
 
           <Link
             href="#about"
@@ -152,7 +161,7 @@ const Header = () => {
       {/* Mobile Drawer */}
       <Drawer isOpen={isDrawerOpen} placement="left" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent bg="#502626" color="#F5C7A9">
+        <DrawerContent bg="#28211d" color="#F5C7A9">
           <DrawerCloseButton />
           <DrawerHeader>Menu</DrawerHeader>
           <DrawerBody>
@@ -166,6 +175,14 @@ const Header = () => {
                 Home
               </Link>
               <Link
+                href="#service"
+                fontSize="lg"
+                _hover={{ color: "#c49d84" }}
+                onClick={onClose}
+              >
+                Services
+              </Link>
+              <Link
                 href="#about"
                 fontSize="lg"
                 _hover={{ color: "#c49d84" }}
@@ -173,7 +190,7 @@ const Header = () => {
               >
                 About Us
               </Link>
-              <Menu isOpen={isOpen}>
+              {/* <Menu isOpen={isOpen}>
                 <MenuButton
                   fontSize="lg"
                   bg="transparent"
@@ -210,7 +227,7 @@ const Header = () => {
                     </MenuItem>
                   ))}
                 </MenuList>
-              </Menu>
+              </Menu> */}
             </VStack>
           </DrawerBody>
         </DrawerContent>
