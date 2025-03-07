@@ -13,15 +13,12 @@ import visit1 from "../assets/visit-1.jpg";
 import visit2 from "../assets/visit-2.jpg";
 import visit3 from "../assets/visit-3.jpg";
 
-const hexagonStyle = {
-  clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
-
-  width: "280px",
-  height: "230px",
-  objectFit: "cover",
-};
-
 const Visit = () => {
+  const hexagonStyle = {
+    clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
+
+    objectFit: "cover",
+  };
   return (
     <Box bg="#FFF5F0" p={10} py={20} id="about">
       <Flex
@@ -31,22 +28,40 @@ const Visit = () => {
         gap={10}
       >
         {/* Hexagonal Images */}
-        <Box display={{ base: "none", md: "flex" }}>
+        <Box display="flex">
           <Flex direction="row" align="center">
-            <Flex direction="column" align="center" gap={4}>
+            <Flex direction="column" align="center" gap={{ md: 4, base: 1 }}>
               {/* First row - Single Image */}
               <Flex justify="center">
-                <Image src={visit1} alt="Interior 1" sx={hexagonStyle} />
+                <Image
+                  src={visit1}
+                  alt="Interior 1"
+                  sx={hexagonStyle}
+                  width={{ md: "280px", base: "100px" }}
+                  height={{ md: "230px", base: "100px" }}
+                />
                 {/* <Image src={visit3} alt="Interior 3" sx={hexagonStyle} /> */}
               </Flex>
 
               {/* Second row - Two Images */}
-              <Flex justify="center" gap={4} mt={0}>
-                <Image src={visit2} alt="Interior 2" sx={hexagonStyle} />
+              <Flex justify="center" gap={{ md: 4, base: 1 }} mt={0}>
+                <Image
+                  src={visit2}
+                  alt="Interior 2"
+                  sx={hexagonStyle}
+                  width={{ md: "280px", base: "100px" }}
+                  height={{ md: "230px", base: "100px" }}
+                />
               </Flex>
             </Flex>
-            <Flex justify="center" mt={0} ml={-12}>
-              <Image src={visit3} alt="Interior 3" sx={hexagonStyle} />
+            <Flex justify="center" mt={0} ml={{ md: -12, base: -5 }}>
+              <Image
+                src={visit3}
+                alt="Interior 3"
+                sx={hexagonStyle}
+                width={{ md: "280px", base: "100px" }}
+                height={{ md: "230px", base: "100px" }}
+              />
             </Flex>
           </Flex>
         </Box>
