@@ -30,6 +30,7 @@ const BottomNav = () => {
       color="#F5C7A9"
       py={3}
       zIndex="1000"
+        height = "80px"
     >
       <HStack justify="space-around">
         <VStack>
