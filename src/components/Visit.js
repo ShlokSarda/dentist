@@ -54,7 +54,7 @@ const Visit = () => {
                 />
               </Flex>
             </Flex>
-            <Flex justify="center" mt={0} ml={{ md: -12, base: -5 }}>
+            <Flex justify="center" mt={0} ml={{ md: -12, base: -10 }}>
               <Image
                 src={visit3}
                 alt="Interior 3"
