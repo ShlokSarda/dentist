@@ -44,7 +44,7 @@ const BottomNav = () => {
           <Text fontSize="sm">Phone</Text>
         </VStack>
 
-        <VStack spacing={1} align="center" marginLeft={2}>
+        <VStack spacing={1} align="center" marginLeft={5}>
           <IconButton
             aria-label="Book Online"
             icon={<FaCalendarAlt />}
