@@ -79,45 +79,6 @@ const Header = () => {
             Services
           </Link>
 
-          {/* <Menu isOpen={isOpen}>
-            <MenuButton
-              fontSize="lg"
-              bg="transparent"
-              color="#F5C7A9"
-              _hover={{ color: "#c49d84" }}
-              onMouseEnter={() => setIsOpen(true)}
-              onMouseLeave={() => setIsOpen(false)}
-            >
-              Services <ChevronDownIcon />
-            </MenuButton>
-            <MenuList
-              bg="#502626"
-              border="none"
-              boxShadow="none"
-              onMouseEnter={() => setIsOpen(true)}
-              onMouseLeave={() => setIsOpen(false)}
-            >
-              {[
-                { label: "Teeth Cleaning", href: "#cleaning" },
-                { label: "Teeth Whitening", href: "#whitening" },
-                { label: "Braces & Aligners", href: "#braces" },
-                { label: "Dental Implants", href: "#implants" },
-              ].map((item, index) => (
-                <MenuItem
-                  key={index}
-                  as={Link}
-                  href={item.href}
-                  bg="transparent"
-                  _hover={{ color: "#c49d84", bg: "transparent" }}
-                  color="#F5C7A9"
-                  _focus={{ bg: "transparent", boxShadow: "none" }}
-                >
-                  {item.label}
-                </MenuItem>
-              ))}
-            </MenuList>
-          </Menu> */}
-
           <Link
             href="#about"
             fontSize="lg"
@@ -134,6 +95,7 @@ const Header = () => {
             href="tel:+919256491206"
             _hover={{ color: "#c49d84" }}
             color="#F5C7A9"
+            display={{ base: "none", md: "block" }}
           >
             <Icon as={FaPhoneAlt} boxSize={5} />
           </Link>
@@ -142,6 +104,7 @@ const Header = () => {
             target="_blank"
             _hover={{ color: "#c49d84" }}
             color="#F5C7A9"
+            display={{ base: "none", md: "block" }}
           >
             <Icon as={FaDirections} boxSize={6} />
           </Link>

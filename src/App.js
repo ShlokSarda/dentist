@@ -10,6 +10,7 @@ import InfoSection from "./components/InfoSection";
 import Visit from "./components/Visit";
 import BookingSection from "./components/Booking";
 import Footer from "./components/Footer";
+import BottomNav from "./components/BottomNav";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <BookingSection />
           <Footer />
         </Box>
+        <BottomNav />
       </Router>
     </ChakraProvider>
   );
