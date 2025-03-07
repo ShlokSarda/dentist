@@ -31,7 +31,7 @@ const BottomNav = () => {
       py={3}
       zIndex="1000"
     >
-      <HStack justify="space-evenly" width="100%">
+      <HStack justify="space-around">
         <VStack>
           <Link
             href="tel:+919256491206"
