@@ -83,7 +83,7 @@ const Footer = () => {
                 bg="#F5C7A9"
                 borderRadius="full"
                 as="a"
-                href="#"
+                href="https://www.facebook.com/share/14wSXppc43/?mibextid=wwXIfr"
                 aria-label="Facebook"
                 icon={<FaFacebook />}
               />
@@ -99,7 +99,7 @@ const Footer = () => {
                 bg="#F5C7A9"
                 borderRadius="full"
                 as="a"
-                href="https://my.linkedin.com/company/qualiteeth?trk=ppro_cprof"
+                href="https://www.linkedin.com/company/qualiteeth/"
                 aria-label="LinkedIn"
                 icon={<FaLinkedin />}
               />
