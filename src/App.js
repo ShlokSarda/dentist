@@ -23,7 +23,7 @@ function App() {
         </Box>
 
         {/* Content with padding to avoid overlap */}
-        <Box paddingTop="80px" paddingBottom="10px">
+        <Box paddingTop="80px" paddingBottom="20px">
           <HeroSection />
           <DentalServices />
 
