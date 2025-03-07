@@ -30,10 +30,10 @@ const BottomNav = () => {
       color="#F5C7A9"
       py={3}
       zIndex="1000"
-        height = "80px"
+      height="80px"
     >
       <HStack justify="space-around">
-        <VStack>
+        <VStack spacing={1}>
           <Link
             href="tel:+919256491206"
             _hover={{ color: "#c49d84" }}
@@ -44,7 +44,7 @@ const BottomNav = () => {
           <Text fontSize="sm">Phone</Text>
         </VStack>
 
-        <VStack>
+        <VStack spacing={1}>
           <IconButton
             aria-label="Book Online"
             icon={<FaCalendarAlt />}
@@ -74,7 +74,7 @@ const BottomNav = () => {
           </Modal>
         </VStack>
 
-        <VStack>
+        <VStack spacing={1}>
           <Link
             href="https://www.google.com/maps/place/Qualiteeth+Dental+Care/@26.9018108,75.7366896,17z/data=!3m1!4b1!4m6!3m5!1s0x396db52aa8fff4cf:0xfd055fea55b4585d!8m2!3d26.901806!4d75.7392645!16s%2Fg%2F11l5vzlvgg?entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
@@ -83,7 +83,7 @@ const BottomNav = () => {
           >
             <Icon as={FaDirections} marginTop={{ base: 2 }} boxSize={6} />
           </Link>
-          <Text fontSize="sm">Directions</Text>
+          <Text fontSize="sm">Get Directions</Text>
         </VStack>
       </HStack>
     </Box>
