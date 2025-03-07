@@ -82,7 +82,7 @@ const BottomNav = () => {
           >
             <Icon as={FaDirections} marginTop={{ base: 2 }} boxSize={6} />
           </Link>
-          <Text fontSize="sm">Get Directions</Text>
+          <Text fontSize="sm">Directions</Text>
         </VStack>
       </HStack>
     </Box>
