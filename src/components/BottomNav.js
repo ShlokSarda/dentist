@@ -28,9 +28,9 @@ const BottomNav = () => {
       width="100%"
       bg="#28211d"
       color="#F5C7A9"
-      py={3}
+      py={1}
       zIndex="1000"
-      height="80px"
+      height="70px"
     >
       <HStack justify="space-around">
         <VStack spacing={1}>
@@ -83,7 +83,7 @@ const BottomNav = () => {
           >
             <Icon as={FaDirections} marginTop={{ base: 2 }} boxSize={6} />
           </Link>
-          <Text fontSize="sm">Get Directions</Text>
+          <Text fontSize="sm">Directions</Text>
         </VStack>
       </HStack>
     </Box>
