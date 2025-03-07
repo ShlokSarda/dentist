@@ -38,7 +38,7 @@ const BottomNav = () => {
             _hover={{ color: "#c49d84" }}
             color="#F5C7A9"
           >
-            <Icon as={FaPhoneAlt} boxSize={5} />
+            <Icon as={FaPhoneAlt} marginTop={{ base: 2 }} boxSize={6} />
           </Link>
           <Text fontSize="sm">Phone</Text>
         </VStack>
