@@ -99,7 +99,7 @@ const Footer = () => {
                 bg="#F5C7A9"
                 borderRadius="full"
                 as="a"
-                href="#"
+                href="https://my.linkedin.com/company/qualiteeth?trk=ppro_cprof"
                 aria-label="LinkedIn"
                 icon={<FaLinkedin />}
               />
@@ -109,11 +109,7 @@ const Footer = () => {
 
         {/* Bottom Footer Section */}
         <Box textAlign="center" mt={10}>
-          <Text fontSize="sm">
-            © Qualiteeth Dental 2025 |{" "}
-            <Link fontWeight="bold">Privacy Policy</Link> |{" "}
-            <Link fontWeight="bold">Accessibility Statement</Link>
-          </Text>
+          <Text fontSize="sm">© Qualiteeth Dental 2025 </Text>
         </Box>
       </Container>
     </Box>
