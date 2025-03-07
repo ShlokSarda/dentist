@@ -31,14 +31,14 @@ const BottomNav = () => {
       py={3}
       zIndex="1000"
     >
-      <HStack justify="space-around">
+      <HStack justify="space-evenly" width="100%">
         <VStack>
           <Link
             href="tel:+919256491206"
             _hover={{ color: "#c49d84" }}
             color="#F5C7A9"
           >
-            <Icon as={FaPhoneAlt} marginTop={{ base: 2 }} boxSize={6} />
+            <Icon as={FaPhoneAlt} marginTop={{ base: 2 }} boxSize={5} />
           </Link>
           <Text fontSize="sm">Phone</Text>
         </VStack>
