@@ -24,6 +24,7 @@ function App() {
           <HeroSection />
           <DentalServices />
           <InfoSection />
+          <Testimonials/>
           <Visit />
           <BookingSection />
           <Footer />
