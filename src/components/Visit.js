@@ -37,8 +37,8 @@ const Visit = () => {
                   src={visit1}
                   alt="Interior 1"
                   sx={hexagonStyle}
-                  width={{ md: "280px", base: "100px" }}
-                  height={{ md: "230px", base: "100px" }}
+                  width={{ md: "280px", base: "120px" }}
+                  height={{ md: "230px", base: "120px" }}
                 />
                 {/* <Image src={visit3} alt="Interior 3" sx={hexagonStyle} /> */}
               </Flex>
@@ -49,8 +49,8 @@ const Visit = () => {
                   src={visit2}
                   alt="Interior 2"
                   sx={hexagonStyle}
-                  width={{ md: "280px", base: "100px" }}
-                  height={{ md: "230px", base: "100px" }}
+                  width={{ md: "280px", base: "120px" }}
+                  height={{ md: "230px", base: "120px" }}
                 />
               </Flex>
             </Flex>
@@ -59,8 +59,8 @@ const Visit = () => {
                 src={visit3}
                 alt="Interior 3"
                 sx={hexagonStyle}
-                width={{ md: "280px", base: "100px" }}
-                height={{ md: "230px", base: "100px" }}
+                width={{ md: "280px", base: "120px" }}
+                height={{ md: "230px", base: "120px" }}
               />
             </Flex>
           </Flex>
