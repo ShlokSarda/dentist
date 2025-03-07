@@ -11,17 +11,19 @@ import Visit from "./components/Visit";
 import BookingSection from "./components/Booking";
 import Footer from "./components/Footer";
 import BottomNav from "./components/BottomNav";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <ChakraProvider>
       <Router>
+        <ScrollToTop />
         <Box position="fixed" top="0" left="0" width="100%" zIndex="1000">
           <Header />
         </Box>
 
         {/* Content with padding to avoid overlap */}
-        <Box paddingTop="80px">
+        <Box paddingTop="80px" paddingBottom="10px">
           <HeroSection />
           <DentalServices />
 
