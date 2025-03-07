@@ -69,7 +69,7 @@ const Footer = () => {
             <Text fontSize="lg" fontWeight="bold">
               Review Us
             </Text>
-            <Link _hover={{ color: "#c49d84" }}>Google</Link>
+            <Link _hover={{ color: "#c49d84" }} href="https://search.google.com/local/writereview?placeid=ChIJz_T_qCq1bTkRXVi0VepfBf0">Google</Link>
             <Text fontSize="lg" fontWeight="bold" mt={4}>
               Social
             </Text>
