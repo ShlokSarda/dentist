@@ -108,7 +108,7 @@ const Footer = () => {
         </SimpleGrid>
 
         {/* Bottom Footer Section */}
-        <Box textAlign="center" mt={10}>
+        <Box textAlign="center" mt={5}>
           <Text fontSize="sm">© Qualiteeth Dental 2025 </Text>
         </Box>
       </Container>
