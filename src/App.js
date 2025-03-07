@@ -23,8 +23,9 @@ function App() {
         <Box paddingTop="80px">
           <HeroSection />
           <DentalServices />
+
+          <Testimonials />
           <InfoSection />
-          <Testimonials/>
           <Visit />
           <BookingSection />
           <Footer />

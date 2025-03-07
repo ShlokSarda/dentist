@@ -174,9 +174,9 @@ const HeroSection = () => {
               lineHeight="1.2"
             >
               Experience top-tier dental care in a modern and comfortable
-              setting. At Qualiteeth, our skilled Oakville dentist combines
-              expertise with cutting-edge technology to deliver personalized
-              treatments that keep your smile healthy and radiant.
+              setting. At Qualiteeth, our skilled dentist combines expertise
+              with cutting-edge technology to deliver personalized treatments
+              that keep your smile healthy and radiant.
             </Text>
             <Text
               fontSize={{ base: "lg", md: "lg" }}

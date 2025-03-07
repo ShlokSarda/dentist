@@ -6,7 +6,7 @@ const InfoSection = () => {
     <Flex
       maxW="6xl"
       mx="auto"
-      py={{ base: "0", md: 20 }}
+      py={{ base: 0, md: 20 }}
       gap={0}
       flexWrap="wrap"
       justify="center"

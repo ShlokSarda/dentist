@@ -12,7 +12,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <Box bg="#502626" color="#F5C7A9" py={10}>
+    <Box bg="#28211d" color="#F5C7A9" py={10}>
       <Container maxW="6xl">
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10}>
           {/* Office Section */}
@@ -69,7 +69,12 @@ const Footer = () => {
             <Text fontSize="lg" fontWeight="bold">
               Review Us
             </Text>
-            <Link _hover={{ color: "#c49d84" }} href="https://search.google.com/local/writereview?placeid=ChIJz_T_qCq1bTkRXVi0VepfBf0">Google</Link>
+            <Link
+              _hover={{ color: "#c49d84" }}
+              href="https://search.google.com/local/writereview?placeid=ChIJz_T_qCq1bTkRXVi0VepfBf0"
+            >
+              Google
+            </Link>
             <Text fontSize="lg" fontWeight="bold" mt={4}>
               Social
             </Text>

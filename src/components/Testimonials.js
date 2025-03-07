@@ -23,7 +23,7 @@ const Testimonials = () => {
           margin: "0 auto",
           padding: "50px",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-          backgroundColor: "white",
+          backgroundColor: "#F5C7A9",
         }}
       ></div>
     </div>
