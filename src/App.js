@@ -12,6 +12,7 @@ import BookingSection from "./components/Booking";
 import Footer from "./components/Footer";
 import BottomNav from "./components/BottomNav";
 import ScrollToTop from "./components/ScrollToTop";
+import Tour from "./components/Tour";
 
 function App() {
   useEffect(() => {
@@ -24,7 +25,9 @@ function App() {
     // Initialize Google Analytics
     script.onload = () => {
       window.dataLayer = window.dataLayer || [];
-      function gtag() { window.dataLayer.push(arguments); }
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
       gtag("js", new Date());
       gtag("config", "G-3DKPYM38ZY");
     };
@@ -38,13 +41,14 @@ function App() {
         </Box>
 
         {/* Content with padding to avoid overlap */}
-        <Box paddingTop="80px" paddingBottom="40px">
+        <Box paddingTop="80px" paddingBottom="20px">
           <HeroSection />
           <DentalServices />
 
           <Testimonials />
           <InfoSection />
           <Visit />
+          <Tour />
           <BookingSection />
           <Footer />
         </Box>
