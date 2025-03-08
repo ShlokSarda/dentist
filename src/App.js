@@ -46,9 +46,10 @@ function App() {
           <DentalServices />
 
           <Testimonials />
+          <Tour />
           <InfoSection />
           <Visit />
-          <Tour />
+          
           <BookingSection />
           <Footer />
         </Box>
