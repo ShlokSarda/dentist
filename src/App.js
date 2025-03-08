@@ -14,6 +14,21 @@ import BottomNav from "./components/BottomNav";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+  useEffect(() => {
+    // Load Google Analytics script dynamically
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-3DKPYM38ZY";
+    document.head.appendChild(script);
+
+    // Initialize Google Analytics
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-3DKPYM38ZY");
+    };
+  }, []);
   return (
     <ChakraProvider>
       <Router>
